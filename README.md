@@ -4,6 +4,6 @@
 # 准备工作
 + python
 
-#项目目录
+# 项目目录
 1.[词云](https://github.com/datadeng/DataScienceProjects/tree/master/01WordCloud)
 
