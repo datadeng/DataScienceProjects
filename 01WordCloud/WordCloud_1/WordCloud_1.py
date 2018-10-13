@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# ## WordCloud_1
+# 以英文为例，显示词云制作过程
+
+# ## 导入词云包
+
 # In[2]:
 
 
@@ -8,27 +13,29 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 
-# In[3]:
+# ## 生成对象
+
+# In[11]:
 
 
-# 打开文本
-text = open('constitution.txt').read()
-# 生成对象
+text = open('../constitution.txt').read()
 wc = WordCloud().generate(text)
 
 
-# In[4]:
+# ## 显示词云
+
+# In[12]:
 
 
-# 显示词云
 plt.imshow(wc, interpolation='bilinear')
 plt.axis('off')
 plt.show()
 
 
-# In[5]:
+# ## 保存图片
+
+# In[13]:
 
 
-# 保存到文件
 wc.to_file('wordcloud.png')
 
